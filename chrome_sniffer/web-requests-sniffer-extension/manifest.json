@@ -1,0 +1,17 @@
+{
+  "name": "Sniff Web Requests",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Logs all web requests (urls, headers, body) and save to json file for import into Burpsuite",
+  "permissions": ["activeTab","storage","downloads","webRequest", "<all_urls>", "webRequestBlocking"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+  //"options_page": "options.html",
+  "browser_action": {
+    "default_title": "Web Requests Sniffer",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
